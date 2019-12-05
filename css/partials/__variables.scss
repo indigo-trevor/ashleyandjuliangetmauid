@@ -1,0 +1,21 @@
+$segoe: 'Segoe UI Regular', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+$segoe-light: 'Segoe UI Light', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+$segoe-semi: 'Segoe UI Semibold', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+$segoe-bold: 'Segoe UI Bold', -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
+
+
+$breakpoint-xs: 550px;
+$breakpoint-s: 768px;
+$breakpoint-m: 992px;
+$breakpoint-l: 1200px;
+
+$XS: 'min-width:'+ $breakpoint-xs;
+$S: 'min-width:'+ $breakpoint-s;
+$M: 'min-width:'+ $breakpoint-m;
+$L: 'min-width:'+ $breakpoint-l;
+
+
+$blue: #0078d4;
+$green: #6cb33f;
+$grey: #EBEBEB;
+$dark-grey: #747474
