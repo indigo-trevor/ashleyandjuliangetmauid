@@ -11,6 +11,7 @@ const paths = {
 	js: ['js/*', 'js/*/*'],
 	css: ['css/**/*.scss'],
 	img: ['img/*', 'img/*/*'],
+	fonts: ['css/fonts/*', 'css/fonts/*/*'],
 	html: ['index.html']
 }
 
@@ -28,6 +29,11 @@ gulp.task('js', function () {
 	.pipe(uglify({mangle:true}))
 	.pipe(gulp.dest('docs'))
 	.pipe(connect.reload());
+});
+
+gulp.task('fonts', function(){
+	gulp.src(paths.fonts)
+	.pipe(gulp.dest('docs/css/fonts'))
 });
 
 gulp.task('clean', function() {
@@ -69,4 +75,4 @@ gulp.task('serve', function(){
 	})
 });
 
-gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images']);
+gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images', 'fonts']);

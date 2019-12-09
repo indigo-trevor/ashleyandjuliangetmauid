@@ -1,1 +1,1 @@
-$(document).ready(function(){console.log("main.js loaded")});
+$(document).ready(function(){console.log("main.js loaded"),$(function(){$(".nav-wrapper").stickyNavbar({activeClass:"active",sectionSelector:"scrollto",animDuration:250,startAt:56,easing:"linear",animateCSS:!1,animateCSSRepeat:!1,cssAnimation:"fadeInDown",jqueryEffects:!1,jqueryAnim:"slideDown",selector:"li",mobile:!1,mobileWidth:480,zindex:9999,stickyModeClass:"sticky",unstickyModeClass:"unsticky"})})});
