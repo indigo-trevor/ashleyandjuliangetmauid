@@ -28,32 +28,12 @@
           color: $black;
           text-decoration: none;
           position: relative;
-          padding-bottom: 3px;
-
-          &:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            left: 0;
-            bottom: 0;
-            background-color: $white;
-            transition: all 250ms ease;
-          }
-
         }
 
         &.active {
 
           a {
             color: $sienna;
-            // font-weight: 900;
-
-            &:after {
-              width: 100%;
-              background-color: $slate;
-            }
-
           }
 
         }
