@@ -7,11 +7,7 @@
   height: 56px;
   transition: all 250ms ease;
   z-index: 9999;
-
-  &.sticky {
-    top: 0;
-    box-shadow: 0 15px 8px -18px $black;
-  }
+  box-shadow: 0 15px 8px -18px $black;
 
   #nav {
 
@@ -35,7 +31,7 @@
         &.active {
 
           a {
-            color: $sienna;
+            color: $gold;
           }
 
         }
@@ -43,7 +39,7 @@
         &:hover {
 
           a {
-            color: $sienna;
+            color: $gold;
           }
 
         }

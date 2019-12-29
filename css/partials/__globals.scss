@@ -21,14 +21,76 @@
   }
 
   &--body {
-    padding: 150px 0;
+    padding: 125px 0;
     min-height: 100vh;
     text-align: center;
+
+    .container {
+      max-width: 700px;
+    }
   }
 
+  &--wedding {
+    padding: 175px 0 125px 0;
+    background-image: url(../img/palm-leaf.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+  }
+
+  &--travel {
+    .card__inner--clickable {
+      p:last-child {
+        margin-bottom: .5em;
+      }
+    }
+  }
   &:focus,
   &:active {
     outline: none;
+  }
+
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  border: 1px solid $gold;
+  margin-top: 2em;
+  padding: 2em 2em;
+
+  &__inner {
+    position: relative;
+
+    a {
+      text-decoration: none;
+    }
+
+    &--clickable {
+      margin: 2em 0;
+
+      h4 {
+        color: $black;
+        margin-bottom: 32px;
+      }
+
+      p {
+        margin: 0 0;
+      }
+      a {
+        position: relative;
+      }
+      .link-phone {
+        position: relative;
+        margin-top: 1em;
+      }
+
+    }
+
+  }
+
+  &--event {
+
   }
 
 }
