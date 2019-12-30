@@ -2,7 +2,6 @@ $(document).ready(function() {
   console.log("main.js loaded");
 
   // START: Nav
-
   // Init
   $(function () {
     $('.nav-wrapper').stickyNavbar({
@@ -17,7 +16,7 @@ $(document).ready(function() {
     jqueryEffects: false,           // jQuery animation on/off
     jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
     selector: "li",                  // Selector to which activeClass will be added, either "a" or "li"
-    mobile: false,                  // If false nav will not stick under 480px width of window
+    mobile: true,                  // If false nav will not stick under 480px width of window
     mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
     zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
     stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
@@ -41,7 +40,7 @@ $(document).ready(function() {
       jqueryEffects: false,           // jQuery animation on/off
       jqueryAnim: "slideDown",        // jQuery animation type: fadeIn, show or slideDown
       selector: "li",                  // Selector to which activeClass will be added, either "a" or "li"
-      mobile: false,                  // If false nav will not stick under 480px width of window
+      mobile: true,                  // If false nav will not stick under 480px width of window
       mobileWidth: 480,               // The viewport width (without scrollbar) under which stickyNavbar will not be applied (due usability on mobile devices)
       zindex: 9999,                   // The zindex value to apply to the element: default 9999, other option is "auto"
       stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
@@ -49,6 +48,13 @@ $(document).ready(function() {
       });
     });
   });
+
+
+  // Squeeze
+    $(".hamburger--squeeze").click(function(){
+        $(".hamburger--squeeze").toggleClass("is-active");
+        $(".nav").toggleClass("is-active");
+    });
 
   // END: Nav
 
