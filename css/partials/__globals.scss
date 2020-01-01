@@ -28,7 +28,7 @@
   }
 
   &--body {
-    padding: 300px 0 0 0;
+    padding: 150px 0 0 0;
     text-align: center;
     @include media-breakpoint-down(md) {
       padding: 100px 0 0 0;
@@ -39,14 +39,29 @@
   }
 
   &--wedding {
-    padding: 175px 0 0 0;
-    background-image: url(../img/palm-leaf.png);
+    padding: 150px 0 0 0;
+    background-image: url(../img/leafs-top-left.png), url(../img/leafs-top-right.png);
     background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-size: contain;
+    background-position: 0% 0%, 100% 0%;
+    background-size: 554px 348px, 554px 348px;
+
+    @include media-breakpoint-down(lg) {
+      background-size: 139px 87px, 139px 87px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 100px 0 0 0;
+    }
   }
 
   &--travel {
+    background-image: url(../img/leaf-border-left.png), url(../img/leaf-border-right.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 100% 0%;
+    background-size: 256px 676px, 256px 676px;
+    @include media-breakpoint-down(lg) {
+      background-size: 64px 169px, 64px 169px;
+    }
     .card__inner--clickable {
       p:last-child {
         margin-bottom: .5em;
@@ -54,10 +69,27 @@
     }
   }
 
+  &--things {
+    background-image: url(../img/leaf-border-left.png), url(../img/leaf-border-right.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 100% 0%;
+    background-size: 256px 676px;
+    @include media-breakpoint-down(lg) {
+      background-size: 64px 169px;
+    }
+  }
   &--registry {
     padding-bottom: 200px;
+    background-image: url(../img/leafs-bottom-left.png), url(../img/leafs-bottom-right.png);
+    background-repeat: no-repeat;
+    background-position: 0% 100%, 100% 100%;
+    background-size: 418px 746px;
+    @include media-breakpoint-down(lg) {
+      background-size: 105px 186px;
+    }
     @include media-breakpoint-down(md) {
       padding-bottom: 100px;
+      background-size: 105px 186px;
     }
   }
 
@@ -69,26 +101,28 @@
 }
 
 .bg-pom {
+  display: none;
   img {
     position: absolute;
-    top: -250px;
+    top: -125px;
     left: -365px;
     width: 400px;
-    height: 290px;
+    // height: 290px;
   }
   @include media-breakpoint-down(md) {
     display: none;
   }
 }
 .bg-pom-flipped {
+  display: none;
   img {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     position: absolute;
-    top: -250px;
+    top: -125px;
     right: -365px;
     width: 400px;
-    height: 290px;
+    // height: 290px;
   }
   @include media-breakpoint-down(md) {
     display: none;
