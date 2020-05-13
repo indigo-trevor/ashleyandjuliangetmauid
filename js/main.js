@@ -1,6 +1,11 @@
 $(document).ready(function() {
   console.log("main.js loaded");
 
+  // Update block
+    $(".close").click(function(){
+        $(".section--update").toggleClass("is-dismissed");
+    });
+
   // START: Nav
   // Init
   $(function () {
